@@ -55,8 +55,36 @@
      * x %= y	same as     x = x % y	Modulus
      */
 
-     //php comparison operator
-     /**
+    //php comparison operator
+    /**
       * php comparison operator digunakan untuk membandingkan 2 nilai (baik angka maupun string)
+      * (==)	Equal		                Returns true if $x is equal to $y	
+      * (===)	Identical	                Returns true if $x is equal to $y,  
+      *                                     and they are of the same type	
+      * (!=)	Not equal	                Returns true if $x is not equal to $y	
+      * (<>)	Not equal	                Returns true if $x is equal to $y (xor logic)
+      * (!==)	Not identical	            Returns true if $x is not equal to $y, 
+      *                                     or they are not of the same type	
+      * (>)	    Greater than	            Returns true if $x is greater than $y	
+      * (<)	    Less than	   	            Returns true if $x is less than $y	
+      * (>=)	Greater than or equal to	Returns true if $x is greater than or equal to $y	
+      * (<=)	Less than or equal to	    Returns true if $x is less than or equal to $y	
+      * (<=>)	Spaceship	                Returns an integer less than, 
+      *                                     equal to, or greater than zero, 
+      *                                     depending on if $x is less than, equal to, 
+      *                                     or greater than $y. Introduced in PHP 7.
+      *                                     (if less, return -1. if same, return 0. if more, return 1)
       */
+    echo "<h1>php arithmethic operator</h1>";
+    echo "<p>apakah 14 sama dengan 14? : " . (14 == 14) . "</P>"; //output : 1
+    echo "<p>apakah tulisan 'big' sama dengan 'bag'? : " . ("big" === "bag") . "</P>"; //output : 0
+    echo "<p>apakah 14 tidak sama dengan 7? : " . (14 != 7) . "</P>"; //output : 1
+    echo "<p>apakah 14 tidak sama dengan '14'? : " . (14 <> "14") . "</P>"; //output : 0
+    echo "<p>apakah 14 tidak sama tipenya dengan '14'? : " . (14 !== "14") . "</P>"; //output : 1
+    echo "<p>apakah 14 lebih dari 15? : " . (14 > 15) . "</P>"; //output : 0
+    echo "<p>apakah 14 kurang dari 20? : " . (14 < 20) . "</P>"; //output : 1
+    echo "<p>apakah 14 lebih dari sama dengan 14? : " . (14 >= 14) . "</P>"; //output : 1
+    echo "<p>apakah 14 kurang dari sama dengan 3? : " . (14 <= 3) . "</P>"; //output : 1
+    echo "<p>apakah 14 sama dengan 14? : " . (14 <=> 14) . "</P>"; //output : 0
+    echo "<br><br>";
 ?>
