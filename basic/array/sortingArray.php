@@ -19,13 +19,13 @@
      * sort function mengurutkan array secara urutan ascending (kecil ke besar)
      */
     $data = [1,3, 5 ,2, 7, 0];
-    echo "<p>" + sort($data) + "</p>";
+    echo "<p>" . sort($data) . "</p>";
 
     //rsort function
     /**
      * rsort function adalah kebalikan dari sort, yaitu urutannya descending (besar ke kecil)
      */
-    echo "<p>" + rsort($data) + "</p>";
+    echo "<p>" . rsort($data) . "</p>";
 
     //asort() function
     /**

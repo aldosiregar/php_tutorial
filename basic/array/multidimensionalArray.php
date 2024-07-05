@@ -41,7 +41,7 @@
      * 
      * indicies pertama untuk baris, dan indicies kedua untuk kolom
      */
-    echo "<p>" + $data[1][2] + "</p>"; //data baris kedua kolom ketiga, yaitu data 3000 
+    echo "<p>" . $data[1][2] . "</p>"; //data baris kedua kolom ketiga, yaitu data 3000 
 
     /**
      * jika kita menggunakan loop untuk mengakses datanya, kita bisa menggunakan nested loop untuk
@@ -50,7 +50,7 @@
     for($row = 0; $row < count($data); $row++){
         echo "<p>";
         for($col = 0; $col < count($data[0]); $col++){
-            echo $data[$row][$col] + " ";
+            echo $data[$row][$col] . " ";
         }
         echo "</p>";
     };
